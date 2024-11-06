@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />    
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/a2.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <style>
+        label.radio{cursor: pointer}
+        label.radio input{position: absolute;top: 0;left: 0;visibility: hidden;pointer-events: none}
+        label.radio span{padding: 2px 9px;border: 2px solid #ff0000;display: inline-block;color: #ff0000;border-radius: 3px;text-transform: uppercase}
+        label.radio input:checked+span{border-color: #ff0000;background-color: #ff0000;color: #fff}
+        .footer-clean {
+            padding:50px;
+            background-color:#B3A1A1;
+            color:#000000;
+          }
+          
+          .footer-clean h3 {
+            margin-top:0;
+            margin-bottom:30px !important;
+            margin-top: 30px !important;
+            font-weight:bold;
+            font-size:16px;
+          }
+          
+          .footer-clean ul {
+            padding:0;
+            list-style:none;
+            line-height:1.6;
+            font-size:14px;
+            margin-bottom:0;
+          }
+          
+          .footer-clean ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+          }
+          
+          .footer-clean ul a:hover {
+            opacity:1;
+          }
+          
+          .footer-clean .item.social {
+            text-align:right;
+          }
+          
+          @media (max-width:767px) {
+            .footer-clean .item {
+              text-align:center;
+              padding-bottom:20px;
+            }
+          }
+          
+          @media (max-width: 768px) {
+            .footer-clean .item.social {
+              text-align:center;
+            }
+          }
+          
+          .footer-clean .item.social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #000000;
+            margin-left:10px;
+            margin-top:22px;
+            color:inherit;
+            opacity:0.75;
+          }
+          
+          .footer-clean .item.social > a:hover {
+            opacity:0.9;
+          }
+          
+          @media (max-width:991px) {
+            .footer-clean .item.social > a {
+              margin-top:40px;
+            }
+          }
+          
+          @media (max-width:767px) {
+            .footer-clean .item.social > a {
+              margin-top:10px;
+            }
+          }
+          
+          .footer-clean .copyright {
+            margin-top:14px;
+            margin-bottom:0;
+            font-size:13px;
+            opacity:0.6;
+            color: #000000;
+          }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">DIENTHOAISIEURE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Sản phẩm bán chạy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iphone.html">Iphone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="samsung.html">SamSung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sony.html">Sony</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Các loại khác</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="lg.html">LG</a></li>
+                            <li><a class="dropdown-item" href="ipad.html">IPad</a></li>
+                            <li><a class="dropdown-item" href="oppo.html">Oppo</a></li>
+                            <li><a class="dropdown-item" href="huawei.html">Huawei</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="car.html" class="btn btn-outline-dark">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tao.html">Signin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top:20px !important;">
+        <div class="text-center" >
+          <h2>Chi Tiết Sảm Phẩm</h2>
+        </div>
+      </div>
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                        <img src = "image/SamsungGalaxyct1.jpg" alt = "watch">
+                    </div>
+                    <div class = "hover-container">
+                        <div><img src = "image/SamsungGalaxyct1.jpg"></div>
+                        <div><img src = "image/SamsungGalaxyct2.jpg"></div>
+                        <div><img src = "image/SamsungGalaxyct3.jpg"></div>
+                        <div><img src = "image/SamsungGalaxyct4.jpg"></div>
+                        <div><img src = "image/SamsungGalaxyct2.jpg"></div>
+                    </div>
+                </div>
+                <div class = "product-div-right">
+                    <span class = "product-name">Samsung Galaxy S23+ 5G</span>
+                    <span class = "product-price">7.000.000 vnd</span>
+                    <div class = "product-rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star-half-alt"></i></span>
+                        <div class="sizes mt-5">
+                            <h6 class="text-uppercase">Màu</h6> 
+                            <label class="radio"> 
+                                <input type="radio" name="size" value="Đen" checked> 
+                                <span>Đen</span> 
+                            </label> 
+                            <label class="radio"> 
+                                <input type="radio" name="size" value="Trắng">
+                                 <span>Trắng</span> 
+                                </label> <label class="radio"> 
+                                    <input type="radio" name="size" value="Đỏ"> 
+                                    <span>Đỏ</span> 
+                                </label> 
+                                <label class="radio"> 
+                                    <input type="radio" name="size" value="Bạc"> 
+                                    <span>Bạc</span> 
+                                </label> 
+                                <label class="radio"> 
+                                    <input type="radio" name="size" value="Xanh dương"> 
+                                    <span>Xanh dương</span> 
+                                </label>
+                        </div>
+                    </div>
+                    <p class = "product-description">Samsung Galaxy S23+ 5G 256GB là chiếc điện thoại thuộc dòng cao cấp nhất của Samsung được giới thiệu vào tháng 02/2023. Máy sở hữu một vài điểm ấn tượng như camera có khả năng quay video 8K, cùng với đó là con chip Snapdragon 8 Gen 2 mạnh mẽ hàng đầu giới điện thoại Android.
+                        <div class="btn-groups">
+                            <button type="button" class="add-cart-btn" 
+                                data-id="1" 
+                                data-name="Samsung Galaxy S23+ 5G" 
+                                data-price="7000000">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button type="button" class="buy-now-btn">
+                                <i class="fas fa-wallet"></i> Buy Now
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const allHoverImages = document.querySelectorAll('.hover-container div img');
+        const imgContainer = document.querySelector('.img-container');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            allHoverImages[0].parentElement.classList.add('active');
+        });
+
+        allHoverImages.forEach((image) => {
+            image.addEventListener('mouseover', () =>{
+                imgContainer.querySelector('img').src = image.src;
+                resetActiveImg();
+                image.parentElement.classList.add('active');
+            });
+        });
+
+        function resetActiveImg(){
+            allHoverImages.forEach((img) => {
+                img.parentElement.classList.remove('active');
+            });
+        }
+    </script>
+    <div class="hilo">
+        <div class="hihi">
+            <div class="container" style="margin-top: 20px;" >
+                <div class="row ml-5"  style="background-color: #f8f9fa;">
+                    <div class="col centers">
+                        <h2>Mô Tả Sản Phẩm</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;" >
+                <div class="row ml-5"  style="background-color: #f8f9fa;";>
+                    <div class="col centers">
+                        Thương hiệu: Apple<br>
+                        Dung lượng lưu trữ: 128GB<br>
+                        Loại bảo hành: Bảo hành nhà sản xuất<br>
+                        Hạn bảo hành: 12 tháng<br>
+                        RAM: 4GB<br>
+                        Tình trạng: Mới<br>
+                        Kho hàng: 514<br>
+                        Gửi từ: TP. Hồ Chí Minh<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="py-5" id="bot20">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/oppo-a96-den-thumb-1-600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">OPPO F12</h5>
+                                <!-- Product price-->
+                                12.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/iphone-12-trang-600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Iphone 12</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">12.000.000vnd</span>
+                                8.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/mobell-m539-do-thumb-600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">SWine Smart 3G</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">9.000.000vnd</span>
+                                5.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/Galaxy-S22-Ultra-Burgundy-600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Samsung Galaxy S22 Ultra</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                10.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/iphone-8-600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Iphone 8</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">6.000.000vnd</span>
+                                5.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/vivo-y22s-vang-thumb-1-2-600x600.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">V50 ThinQ 5G</h5>
+                                <!-- Product price-->
+                                12.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/huawei-mate-50-pro--600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">HUAWEI Mate 20 Pro</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">7.000.000vnd</span>
+                                5.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./image/xiaomi-12t-thumb-600x600.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Wine Smart 3G</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                9.000.000vnd
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="chitiet.html">XEM NGAY</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-clean" style="margin-top:40px;">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">IT VLU</a></li>
+                            <li><a href="#">Team 11 TKGT </a></li>
+                            <li><a href="#">LOP 0104</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#">
+                            <i class="icon ion-social-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon ion-social-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon ion-social-snapchat"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon ion-social-instagram"></i>
+                        </a>
+                        <p class="copyright">Company Name © 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>

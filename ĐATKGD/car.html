@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/car.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    </head>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">DIENTHOAISIEURE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Sản phẩm bán chạy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iphone.html">Iphone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="samsung.html">SamSung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sony.html">Sony</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Các loại khác</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="lg.html">LG</a></li>
+                            <li><a class="dropdown-item" href="ipad.html">IPad</a></li>
+                            <li><a class="dropdown-item" href="oppo.html">Oppo</a></li>
+                            <li><a class="dropdown-item" href="huawei.html">Huawei</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="car.html" class="btn btn-outline-dark">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tao.html">Signin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="cart_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cart_container">
+                        <div class="cart_title">Giỏ hàng của bạn</div>
+                        <div class="cart_items">
+                            <ul class="cart_list"></ul>
+                        </div>
+                        <div class="order_total">
+                            <div class="order_total_content text-md-right">
+                                <div class="order_total_title">Tổng tiền:</div>
+                                <div class="order_total_amount">0 vnd</div>
+                            </div>
+                        </div>
+                        <div class="cart_buttons">
+                            <a href="index.html"><button class="button cart_button_clear">Tiếp tục mua</button></a>
+                            <button class="button cart_button_checkout" onclick="clearCart()">Xóa tất cả</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">IT VLU</a></li>
+                            <li><a href="#">Team 11 TKGT </a></li>
+                            <li><a href="#">LOP 0104</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#">
+                            <i class="icon ion-social-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon ion-social-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon ion-social-snapchat"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon ion-social-instagram"></i>
+                        </a>
+                        <p class="copyright">Company Name © 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./main.js"></script>
+</body>
+</html>
